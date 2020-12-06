@@ -1,0 +1,169 @@
+﻿vehicleshop{
+	background: url(back.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+	background-size: cover;
+    border: 2px solid black;
+	color:white;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#header{ /* For the heading */
+	padding-top: 30px;
+	padding-left: 2%;
+	padding-bottom: 20px;
+	padding-right: 2%;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 45px;
+	font-weight: bold;
+	display:block;
+}
+
+logo{
+	margin-top: -20px;
+	content: url("logo.png");
+	float: right;
+	height:110px;
+	width:110px;
+}
+
+vehicle{
+	  width: auto;	  
+	  margin: 2%;	  
+}
+
+luxury,sports{
+	  width: auto;
+	  margin: 2%;
+	  display: block;
+	  background: rgba(51, 45, 45, 0.8);
+	  border: 1px solid red;
+	  padding: 2%;
+}
+
+engine,torque,trans{
+	text-indent: 10px;
+	padding: 1px;
+	display: block;
+	display: list-item;
+	list-style: disc;
+}
+
+id,brand,specs,fuel,description,price{
+	  width: 1300px;
+	  padding: 8px;
+	  display: block;	
+	  font-size: 17px;
+}
+
+#porsche{
+	content: url("porsche.png");
+	height:250px ; 
+	width:550px ;
+	float: right;
+	margin-top: -240px;
+}
+
+#a220{
+	content: url("a220.png");
+	height:280px ; 
+	width:500px ;
+	float: right;
+	margin-top: -270px;
+}
+
+#rolls{
+	content: url("rolls.png");
+	height:280px ; 
+	width:380px ;
+	float: right;
+	margin-top: -270px;
+}
+
+#bmw{
+	content: url("bmw.png");
+	height:280px ; 
+	width:380px ;
+	float: right;
+	margin-top: -270px;
+}
+
+#urus{
+	content: url("urus.png");
+	height:270px ; 
+	width:500px ;
+	float: right;
+	margin-top: -270px;
+}
+
+#shelby{
+	content: url("shelby.png");
+	height:250px ; 
+	width:500px ;
+	float: right;
+	margin-top: -250px;
+}
+
+id{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+price{
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 25px;
+	color: rgb(201, 190, 91);
+	width:355px;
+}
+
+price:hover { /* For Creating a Neon Box*/
+  color: white;
+  cursor:pointer;
+  background: #DC143C;
+  box-shadow: 0 0 10px #DC143C,  0 0 40px #DC143C, 0 0 80px #DC143C;
+  transition-delay: 0s;
+
+}
+
+details{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: rgb(201, 190, 91);
+	padding: 3.5%;
+	background: black;
+	display:block;
+	
+}
+
+about{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: rgb(201, 190, 91);
+	padding: 2%;
+	background: black;
+	float:left;
+}
+
+telephone,website,location,email{
+	text-align:right;
+	display: block;	
+	margin-left: 1475px;
+}
+
+#pic{
+	float:left;
+	margin-top: -135px;
+	padding-left:10px;
+	content: url("logo.png");
+}
+
+website:hover { /* For hover effect */
+  color: yellow;
+  cursor:pointer;
+}
+
+email:hover{
+  color: yellow;
+  cursor:pointer;
+
+  }

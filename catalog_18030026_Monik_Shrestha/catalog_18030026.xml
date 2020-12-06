@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="catalog_18030026.css"?>  <!-- href to css file -->
+
+<vehicleshop xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+         xs:noNamespaceSchemaLocation= "catalog_18030026.xsd"> <!-- Root Tag -->
+
+	<shop id="header"> <!-- for header -->		
+			<name>Jaguar Motosports</name>
+			<logo></logo>		
+	</shop>
+
+	<vehicle> <!-- Parent Tag for luxury and sports -->
+		
+		<luxury>
+			<id>Porsche Panamera S E-Hybrid</id>
+			<brand>Brand: Porsche</brand>
+			<specs>			
+				<engine>Engine: Supercharged and intercooled DOHC 24-valve 3.0-liter V-6</engine>
+				<torque>Torque: 435 lb-ft @ 1250-4000 RPM</torque>
+				<trans>Transmissions: 8-speed automatic transmission Tiptronic S</trans>
+			</specs>
+			<fuel>Fuel Type: Hybrid Electric and gasoline</fuel>
+			<description>The Turbo S E-Hybrid is a 680-hp gasoline-electric beast that now sits at the top of the lineup as the most powerful Panamera model currently sold. The hybrid, however, supplements that with a 136-hp electric motor sandwiched between the engine and the eight-speed PDK dual-clutch automatic transmission.</description>
+			<price>Price You Pay: $190,200</price>
+			<image id="porsche"></image>
+		</luxury>
+
+		<luxury>
+			<id>A 220 Sedan</id>
+			<brand>Brand: Mercedes-Benz</brand>
+			<specs>
+				<engine>Engine: 2.0L inline-4 turbo</engine>
+				<torque>Torque: 221 lb-ft @ 1,600-4,000 rpm</torque>
+				<trans>Transmissions: 7G-DCT 7-speed dual-clutch Automatic</trans>
+			</specs>
+			<fuel>Fuel Type: Premium</fuel>
+			<description>The A 220 Sedan is an advanced mobile device that can really move you. Its groundbreaking voice control responds to you in ways no car ever has. And its turbo power is delivered with bold style, innovative luxury, and advanced safety.</description>
+			<price>Price You Pay: $32,800</price>
+			<image id="a220"></image>
+		</luxury>
+
+		<luxury>
+			<id>Rolls-Royce Phantom VIII</id>
+			<brand>Brand: Rolls-Royce</brand>
+			<specs>			
+				<engine>Engine: 6.75 L N74B68 twin-turbocharged V12</engine>
+				<torque>Torque: 664 lb-ft</torque>
+				<trans>Transmissions: 8-speed 8HP automatic</trans>
+			</specs>
+			<fuel>Fuel Type: Petrol</fuel>
+			<description>The Rolls-Royce Phantom VIII is a full-sized luxury saloon manufactured by Rolls-Royce Motor Cars. It is the eighth and current generation of the Rolls-Royce Phantom, and the second launched by Rolls-Royce under BMW ownership. It is offered in two wheelbase lengths.</description>
+			<price>Price You Pay: $450,000</price>
+			<image id="rolls"></image>
+		</luxury>
+
+		<sports>
+			<id>BMW M5</id>
+			<brand>Brand: BMW</brand>
+			<specs>			
+				<engine>Engine: 4.4 L S63 V8 turbo</engine>
+				<torque>Torque: 553 lb-ft</torque>
+				<trans>Transmissions: 8-speed automatic</trans>
+			</specs>
+			<fuel>Fuel Type: Premium Gasoline</fuel>
+			<description>BMW M5 is a big luxury sedan loaded with high-tech gadgetry and uncorking 600-plus horsepower from its twin-turbo V-8, the 2020 M5 accelerates with unbridled ferocity. Its standard all-wheel-drive system can even send all that power to the rear wheels. </description>
+			<price>Price You Pay: $104,695</price>
+			<image id="bmw"></image>
+		</sports>
+
+		<sports>
+			<id>Lamborghini Urus</id>
+			<brand>Brand: Lamborghini</brand>
+			<specs>			
+				<engine>Engine: 4.0 L FSI twin-turbocharged V8</engine>
+				<torque>Torque: 627 lb·ft @ 2,250 – 4,500 rpm</torque>
+				<trans>Transmissions: 8-speed automatic</trans>
+			</specs>
+			<fuel>Fuel Type: Premium</fuel>
+			<description>The Urus features a front-mounted 4.0-litre twin-turbocharged V8 engine that puts out 650PS of max power and 850Nm of peak torque and is mated to an 8-speed automatic transmission. It sprints from 0-100kmph in merely 3.6 seconds and can hit a top speed of 305kmph.</description>
+			<price>Price You Pay: $200,000</price>
+			<image id="urus"></image>
+		</sports>
+
+		<sports>
+			<id>Ford Mustang Shelby GT350</id>
+			<brand>Brand: Ford</brand>
+			<specs>			
+				<engine>Engine: 5.2L Ti-VCT V8 Engine</engine>
+				<torque>Torque: 429 @ 4,750</torque>
+				<trans>Transmissions: 6-Speed Manual Standard</trans>
+			</specs>
+			<fuel>Fuel Type: Premium unleaded</fuel>
+			<description>The 2020 Ford Mustang Shelby GT350 is a powerful, high-strung muscle car designed to rock race tracks while still being at home on the street. Its special 5.2-liter V-8—code-named Voodoo, with good reason—makes 526 horsepower and revs to a dizzying 8250 rpm with an unforgettable shriek that sounds more Ferrari than Ford.</description>
+			<price>Price You Pay: $59,140</price>
+			<image id="shelby"></image>
+		</sports>
+		
+	</vehicle>
+	
+	<details> <!-- For the footer -->
+		<website>Jaguar Moto</website>
+		<email>business.monikshrestha@gmail.com</email>
+		<telephone>9823237137</telephone>
+		<location>Samakhusi,Kathmandu</location>
+		<image id="pic"> </image>
+	</details>
+
+	<about><![CDATA[One and only car company providing the best imported cars in Nepal. Established around 2020, and going strong as ever. Also all the above mentioned price are excluding the VAT and import cost.]]></about>
+
+</vehicleshop>

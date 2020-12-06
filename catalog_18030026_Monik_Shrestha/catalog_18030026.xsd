@@ -1,0 +1,99 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="logo" type="xs:string"/> <!-- The characters are string  -->
+  <xs:element name="engine" type="xs:string"/>
+  <xs:element name="torque" type="xs:string"/>
+  <xs:element name="trans" type="xs:string"/>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="brand" type="xs:string"/>
+  <xs:element name="specs">
+    <xs:complexType> <!-- complexType contains element and attribute -->
+      <xs:sequence> <!-- Child element apperas in sequence -->
+        <xs:element ref="engine"/>
+        <xs:element ref="torque"/>
+        <xs:element ref="trans"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fuel" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="price" type="xs:string"/>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="jbc:restr-contact-no-length">
+          <xs:attribute type="xs:string" name="id" use="optional"/> <!-- use property is not a necessity  -->
+        </xs:extension>
+      </xs:simpleContent> <!-- simpleContent has extension and no element -->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="luxury">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="brand"/>
+        <xs:element ref="specs"/>
+        <xs:element ref="fuel"/>
+        <xs:element ref="description"/>
+        <xs:element ref="price"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="brand"/>
+        <xs:element ref="specs"/>
+        <xs:element ref="fuel"/>
+        <xs:element ref="description"/>
+        <xs:element ref="price"/>
+        <xs:element ref="image"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="website" type="xs:string"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="telephone" type="xs:long"/>
+  <xs:element name="location" type="xs:string"/>
+  <xs:element name="shop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name" maxOccurs="unbounded" minOccurs="0"/> <!-- optional element -->
+        <xs:element ref="logo" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="luxury" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="sports" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="website" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="email" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="telephone" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="location" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="image" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="about" type="xs:string"/>
+  <xs:element name="vehicleshop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="shop" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="vehicle" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="details" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="about" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
